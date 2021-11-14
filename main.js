@@ -6,7 +6,7 @@
   const userAgentObject = navigator.userAgent
   let isMobile = false
   let device = 'web'
-  let allowedBrowserState = false
+  let allowedBrowserState = true
 
   pElem.innerHTML = "" + userAgentObject
 
