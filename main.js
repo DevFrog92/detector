@@ -22,6 +22,7 @@
   if (isMobile) {
     alert("We're not allowed access to our web site by mobile or tablet!! sorry!" + device)
     window.close()
+    return
   }
 
   deviceElem.innerHTML = "" + device
