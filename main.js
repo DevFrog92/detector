@@ -20,7 +20,7 @@
   }
 
   if (isMobile) {
-    alert("This device is " + device+"We're not allowed access to our web site by mobile or tablet!! sorry!")
+    alert("We're not allowed access to our web site by mobile or tablet!! sorry!" + device)
     window.close()
   }
 
