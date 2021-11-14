@@ -20,7 +20,8 @@
   }
 
   if (isMobile) {
-    alert("This device is " + device)
+    alert("This device is " + device+"We're not allowed access to our web site by mobile or tablet!! sorry!")
+    window.close()
   }
 
   deviceElem.innerHTML = "" + device
@@ -62,7 +63,7 @@
   }
 
   if (allowedBrowserState) {
-    alert("현재 브라우저는 지원하지 않습니다. Chrome, Edge, FireFox, Opera 및 Whale 브라우저는 이용해주세요. 감사합니다.")
+    alert("현재 브라우저는 지원하지 않습니다. Chrome, Edge, FireFox, Opera 및 Whale 브라우저를 이용해주세요. 감사합니다.")
     window.close()
   }
 })()
