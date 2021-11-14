@@ -2,11 +2,14 @@
   const titleElem = document.querySelector(".title")
   const pElem = document.querySelector(".user_agent")
   const deviceElem = document.querySelector(".device")
+  const deviceElemForIE = document.querySelector(".device_IE")
   const userAgentObject = navigator.userAgent
+  const ua = window.navigator.userAgent
   let isMobile = false
   let device = 'web'
 
   pElem.innerHTML = "" + userAgentObject
+  deviceElemForIE.innerHTML = "" + ua
 
   if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(userAgentObject)) {
     isMobile = true
