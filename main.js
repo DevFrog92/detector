@@ -6,7 +6,7 @@
   let isMobile = false
   let device = 'web'
 
-  pElem.innerHTML = `${userAgentObject}`
+  pElem.innerHTML = "" + userAgentObject
 
   if (/(tablet|ipad|playbook|silk)|(android(?!.*mobi))/i.test(userAgentObject)) {
     isMobile = true
@@ -18,10 +18,10 @@
   }
 
   if (isMobile) {
-    alert(`This device is ${device}`)
+    alert("This device is " + device)
   }
 
-  deviceElem.innerHTML = `${device}`
+  deviceElem.innerHTML = "" + device
 
   if (userAgentObject.indexOf('OPR') > 0) {
     titleElem.innerHTML = 'This web is Opera!'
@@ -47,4 +47,4 @@
     titleElem.innerHTML = 'This web is Safari!'
     return
   }
-}())
+})()
