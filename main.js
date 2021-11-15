@@ -68,3 +68,13 @@
     window.close()
   }
 })()
+
+function checkWindowSize() {
+  let media
+
+  media = window.matchMedia("(min-width: 760px)").matches
+}
+
+function setWindowResizeEvent() {
+  window.addEventListener("resize", this.resizeHandler)
+}
