@@ -6,4 +6,6 @@ window.mobileAndTabletCheck = function () {
   return check;
 };
 
-mobileOrTablet.innerHTML = `${window.mobileAndTabletCheck()}`
+if (window.mobileAndTabletCheck()) {
+    alert("We're not allowed access to our web site by mobile or tablet!! sorry!" + device)
+}
