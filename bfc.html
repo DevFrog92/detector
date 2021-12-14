@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+    color: #833ab4;
+    border: 5px dashed;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    /* overflow: hidden; */
+  }
+
+  .float-left {
+    float: left;
+    background-color: #833ab450;
+    padding: 15px;
+    height: 100px;
+  }
+
+  .float_inner, .inner {
+    background-color: #833ab450;
+    height: 200px;
+    width: 80px;
+    border: 2px solid #833ab4;
+  }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="float-left">
+      <div class="float-left inner"></div>
+      <!-- <div class="float_inner"></div> -->
+      왼쪽에 떠있다.
+    </div>
+    여기는 본문 왼쩍에 떠 있는 요소 오른쪽에 위치한다. 떠 있는 요소의 영향을 받지만, 나만이 container의 높이를 결정한다.
+  </div>
+</body>
+</html>
